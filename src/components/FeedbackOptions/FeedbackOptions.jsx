@@ -18,12 +18,8 @@ class FeedbackOptions extends Component {
   };
 
   onSubmitHandler = evt => {
-    let name = '';
     evt.preventDefault();
-    new FormData(evt.target).forEach(value => {
-      name = value;
-    });
-
+    const name = evt.target.elements.feedback.value;
     this.setState({ feedback: '' });
     this.props.onLeaveFeedback(name);
   };
