@@ -2,7 +2,6 @@ import Box from 'components/Box/Box';
 import PropTypes from 'prop-types';
 
 const Section = ({ title, bg, children }) => {
-  // console.log(children);
   return (
     <Box
       as="section"
